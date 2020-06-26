@@ -5,17 +5,19 @@
  * @copyright 2020 Kohana team
  * @license BSD-3-Clause
  */
-namespace Kohana\Dummy;
+
+namespace Kohana\Application;
 
 use Kohana\AbstractModule;
 
 /**
- * Dummy module manager.
+ * Application manager.
  */
 final class Module extends AbstractModule
 {
+
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     public function getPath(): string
     {
@@ -23,7 +25,7 @@ final class Module extends AbstractModule
     }
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     public function getNamespace(): string
     {
@@ -31,26 +33,30 @@ final class Module extends AbstractModule
     }
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
     public function getId(): string
     {
-        return 'kohana';
+        return 'application';
     }
 
     /**
-     * @inheritdoc
+     * @inheritDoc
+     * @todo delete
      */
     public function getName(): string
     {
-        return 'Kohana';
+        return 'Application';
     }
 
     /**
-     * @inheritdoc
+     * @inheritDoc
      */
-    public function getVersion(): string
+    public function getRoutes(): array
     {
-        return '1.0.0';
+        // @todo uncomment
+        return [
+            // new \Kohana\Routing\Route('default', '(<directory>/(<controller>/(<action>/)))')
+        ];
     }
 }

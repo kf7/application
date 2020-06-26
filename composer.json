@@ -1,10 +1,15 @@
 {
-    "name": "kf7/dummy",
+    "name": "kf7/application",
     "type": "library",
-    "description": "Dummy module for Kohana framework",
-    "keywords": ["dummy", "module" "kf7", "kohana", "php"],
+    "description": "Dummy application for Kohana framework",
+    "keywords": [
+        "application",
+        "kf7",
+        "kohana",
+        "php"
+    ],
     "license": "BSD-3-Clause",
-    "homepage": "https://github.com/kf7/dummy",
+    "homepage": "https://github.com/kf7/application",
     "authors": [
         {
             "name": "Kohana team",
@@ -13,23 +18,32 @@
         }
     ],
     "support": {
-        "source": "https://github.com/kf7/dummy",
-        "issues": "https://github.com/kf7/dummy/issues",
-        "docs": "https://kf7.github.io/modules/dummy",
+        "source": "https://github.com/kf7/application",
+        "issues": "https://github.com/kf7/application/issues",
+        "docs": "https://kf7.github.io/modules/application",
         "forum": "https://kf7.discourse.group",
         "chat": "https://telegram.me/kf7_chat"
     },
     "require": {
-        "kf7/system": "^1.0"
+        "php": "^7.2",
+        "ext-mbstring": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "kf7/system": "dev-master",
+        "roave/security-advisories": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "Kohana\\Dummy\\": "src/"
-        }
+            "Kohana\\Application\\": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
-            "Kohana\\Dummy\\": "tests/"
+            "Kohana\\Application\\": "tests/"
         }
     }
 }

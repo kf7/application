@@ -1,3 +1,7 @@
-## Dummy module
+## About
 
-Using for create new KF7 modules.
+Dummy application for Kohana framework.
+
+## Install
+
+Composer: `composer require kf7/application`.
