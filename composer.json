@@ -1,6 +1,7 @@
 {
     "name": "kf7/application",
     "type": "library",
+    "version": "1.0.0",
     "description": "Dummy application for Kohana framework",
     "keywords": [
         "application",
@@ -30,8 +31,7 @@
         "ext-json": "*"
     },
     "require-dev": {
-        "kf7/system": "dev-master",
-        "roave/security-advisories": "dev-master"
+        "kf7/system": "dev-master"
     },
     "autoload": {
         "psr-4": {
