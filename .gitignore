@@ -114,3 +114,7 @@ nb-configuration.xml
 
 # Results
 phpunit*.xml
+
+# Kohana application
+cache/*
+logs/*

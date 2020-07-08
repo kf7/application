@@ -1,12 +1,13 @@
 {
     "name": "kf7/application",
+    "version": "v1.0.0",
     "type": "library",
-    "version": "1.0.0",
-    "description": "Dummy application for Kohana framework",
+    "description": "Dummy application for Kohana framework 7",
     "keywords": [
         "application",
         "kf7",
         "kohana",
+        "kohana7",
         "php"
     ],
     "license": "BSD-3-Clause",
@@ -26,24 +27,24 @@
         "chat": "https://telegram.me/kf7_chat"
     },
     "require": {
-        "php": "^7.2",
-        "ext-mbstring": "*",
-        "ext-json": "*"
+        "php": "^7.2"
     },
     "require-dev": {
-        "kf7/system": "dev-master"
+        "phpunit/phpunit": "^8.5"
     },
     "autoload": {
         "psr-4": {
             "Kohana\\Application\\": "src/"
-        },
-        "files": [
-            "src/functions.php"
-        ]
+        }
     },
     "autoload-dev": {
         "psr-4": {
             "Kohana\\Application\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
         }
     }
 }
